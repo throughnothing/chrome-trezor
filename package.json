@@ -1,0 +1,30 @@
+{
+  "name": "chrome-trezor",
+  "version": "0.0.1",
+  "description": "Chrome low-level Trezor library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:throughnothing/chrome-trezor.git"
+  },
+  "keywords": [
+    "chrome",
+    "trezor",
+    "bitcoin"
+  ],
+  "author": "William Wolf <throughnothing@gmail.com>",
+  "license": "Public domain",
+  "bugs": {
+    "url": "https://github.com/throughnothing/chrome-trezor/issues"
+  },
+  "homepage": "https://github.com/throughnothing/chrome-trezor",
+  "dependencies": {
+    "bitcoinjs-lib": "^1.4.3",
+    "bitcore": "^0.10.3",
+    "json-loader": "^0.5.1",
+    "protobufjs": "^3.8.2"
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>chrome-trezor-examples</title>
+    <link rel="stylesheet" href="../assets/style.css">
+  </head>
+  <body>
+    <div>
+        <h1>Chrome-Trezor Examples</h1>
+        <div> Open the Javascript console to see output </div>
+        <div class="box">
+            <button id="connect-button">Connect</button>
+        </div>
+        <div class="box">
+            <button id="get-public-key-button">GetPublicKey</button>
+            <span id="password-span" class="hidden">
+                <label id="password-label" for="password">Password</label>
+                <input id="password" type="password"/>
+                <button id="submit-password-button">Submit Password</button>
+            </span>
+        </div>
+        <div id="console">
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/wallet.js"></script>
+  </body>
+</html>

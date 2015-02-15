@@ -1,0 +1,28 @@
+{
+  "name": "chrome-trezor",
+  "description": "Chrome Javascript library or Trezor Bitcoin Hardwear wallet",
+  "version": "0.0.1",
+
+  "manifest_version": 2,
+  "minimum_chrome_version": "38.0.2125.7",
+
+  "icons": {
+    "16": "assets/icon_16.png",
+    "128": "assets/icon_128.png"
+  },
+
+  "app": {
+    "background": {
+      "scripts": ["js/background.js"]
+    }
+  },
+
+  "permissions": [
+    "hid",
+    {
+      "usbDevices": [
+        { "vendorId": 21324, "productId": 1 }
+       ]
+    }
+  ]
+}
