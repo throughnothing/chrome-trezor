@@ -9,6 +9,7 @@ body {
     background-color: #000;
     color: #FFF;
     margin-top: 10px;
+    overflow: scroll;
 }
 
 div.box {
