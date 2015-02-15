@@ -2,8 +2,7 @@
 var Trezor         = require('../index'),
     TrezorDevice   = Trezor.Device,
     TrezorMessage  = Trezor.Message,
-    TrezorMessages = Trezor.Messages,
-    bitcoin        = require('bitcoinjs-lib');
+    TrezorMessages = Trezor.Messages;
 
 var trezor = new TrezorDevice();
 

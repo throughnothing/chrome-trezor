@@ -4,7 +4,7 @@
   "description": "Chrome low-level Trezor library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
   "repository": {
@@ -23,9 +23,6 @@
   },
   "homepage": "https://github.com/throughnothing/chrome-trezor",
   "dependencies": {
-    "bitcoinjs-lib": "^1.4.3",
-    "bitcore": "^0.10.3",
-    "json-loader": "^0.5.1",
     "protobufjs": "^3.8.2"
   }
 }
