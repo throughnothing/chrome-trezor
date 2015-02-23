@@ -1,11 +1,10 @@
 language: node_js
 node_js:
-- '0.10'
 - '0.12'
 before_install:
-  - npm install -g webpack
-  - npm install -g jasmine-node
+  - npm install -g webpack jasmine-node istanbul
 install:
   - npm install
 after_script:
   - webpack
+  - NODE_ENV=test istanbul cover jasmine-node --captureExceptions spec/ && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
