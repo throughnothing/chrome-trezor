@@ -1,8 +1,8 @@
 'use strict';
-var Trezor         = require('../index'),
-    TrezorDevice   = Trezor.Device,
-    TrezorMessage  = Trezor.Message,
-    TrezorMessages = Trezor.Messages;
+var Trezor         = require('..');
+var TrezorDevice   = Trezor.Device;
+var TrezorMessage  = Trezor.Message;
+var TrezorMessages = Trezor.Messages;
 
 var trezor = new TrezorDevice();
 
@@ -59,7 +59,7 @@ function connect() {
 
 function getPublicKey() {
   trezor.send('GetPublicKey',
-      [Trezor.HARDEN|44, Trezor.HARDEN|0, Trezor.HARDEN|0]);
+      [TrezorDevice.HARDEN|44, TrezorDevice.HARDEN|0, TrezorDevice.HARDEN|0]);
 }
 
 function sendPassphraseAck(passphrase) {
