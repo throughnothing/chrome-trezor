@@ -65,7 +65,13 @@ The example program has a sample in `example-builds/manifest.json` that can be u
   * Node.js's [npm](https://www.npmjs.org/). On my OSX machine I
     satisfied this requirement with `brew install node`.
   * Webpack + App dependencies:
-    * `sudo npm -g install webpack && npm install`
+    * `sudo npm -g install webpack mocha && npm install`
+
+## Running tests
+
+```
+npm run test
+```
 
 ## Build
 
