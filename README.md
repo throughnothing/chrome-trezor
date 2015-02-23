@@ -36,6 +36,24 @@ how to run everything.
 If you want to modify the code and run your modifications, you will need to
 proceed with the development requirements below.
 
+## Using in Chrome Apps/Extensions
+
+To use this in Chrome Apps/Extensions, you will need your app to have
+the following permissions in your `manifest.json` in order to access
+the trezor device:
+
+```
+  "permissions": [
+    "hid",
+    {
+      "usbDevices": [
+        { "vendorId": 21324, "productId": 1 }
+      ]
+    },
+    ...
+  ],
+```
+
 ## Development requirements
 
   * Chrome 38 or later. If you're on dev channel you should be fine.
