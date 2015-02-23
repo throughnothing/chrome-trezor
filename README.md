@@ -1,5 +1,7 @@
 # chrome-trezor
 
+[![Build Status](https://travis-ci.org/throughnothing/chrome-trezor.svg)](https://travis-ci.org/throughnothing/chrome-trezor)
+
 This is a javascript library to interface with a Trezor Bitcoin hardware
 wallet directly from the Chrome browser.  It will work in Chrome on all
 platforms and also on Chromebooks.
