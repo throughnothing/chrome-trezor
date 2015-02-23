@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '0.10'
+- '0.12'
+before_install:
+  - npm install -g webpack
+  - npm install -g jasmine-node
+install:
+  - npm install
+after_script:
+  - webpack
