@@ -4,7 +4,7 @@
   "description": "Chrome low-level Trezor library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jasmine",
     "build": "webpack"
   },
   "repository": {
