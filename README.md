@@ -54,6 +54,8 @@ the trezor device:
   ],
 ```
 
+The example program has a sample in `example-builds/manifest.json` that can be used as an example.
+
 ## Development requirements
 
   * Chrome 38 or later. If you're on dev channel you should be fine.
