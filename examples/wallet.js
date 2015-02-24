@@ -12,14 +12,11 @@ function log() {
   for(var i in arguments) {
     msg += ' ' + arguments[i];
   }
-  logBox.innerHTML = msg + '<br/>' + logBox.innerHTML; 
+  logBox.innerHTML = msg + '<br/>' + logBox.innerHTML;
 }
 
 function onError(err) {
   log('Error:', err);
-  trezor.disconnect().on('disconnect', function(){
-    log('Trezor disconnected.');
-  });
 }
 
 function onConnect() {
