@@ -1,10 +1,8 @@
 'use strict';
-var Trezor         = require('..');
-var TrezorDevice   = Trezor.Device;
-var TrezorMessage  = Trezor.Message;
-var TrezorMessages = Trezor.Messages;
+var Trezor   = require('..');
+var Messages = Trezor.Messages;
 
-var trezor = new TrezorDevice();
+var trezor = new Trezor.Device();
 
 var logBox = document.querySelector("#console");
 function log() {
@@ -37,10 +35,10 @@ trezor.on('connect', onConnect);
 trezor.on('message', function(message) {
   log('message type, method:', message.type, message.getMethod());
   switch (message.type) {
-    case TrezorMessages.MessageType.MessageType_PublicKey:
+    case Messages.MessageType.MessageType_PublicKey:
       onMessagePublicKey(message);
       break;
-    case TrezorMessages.MessageType.MessageType_PassphraseRequest:
+    case Messages.MessageType.MessageType_PassphraseRequest:
       onPassphraseRequest(message);
       break;
     default:
@@ -56,7 +54,7 @@ function connect() {
 
 function getPublicKey() {
   trezor.send('GetPublicKey',
-      [TrezorDevice.HARDEN|44, TrezorDevice.HARDEN|0, TrezorDevice.HARDEN|0]);
+      [Trezor.HARDEN|44, Trezor.HARDEN|0, Trezor.HARDEN|0]);
 }
 
 function sendPassphraseAck(passphrase) {

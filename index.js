@@ -1,6 +1,11 @@
 'use strict';
+var trezor = module.exports;
 
-exports.Device   = require('./lib/device');
-exports.Message  = require('./lib/message');
-exports.Messages = require('./lib/messages');
+trezor.Device   = require('./lib/device');
+trezor.Message  = require('./lib/message');
+trezor.Messages = require('./lib/messages');
+trezor.usb      = require('./lib/usb');
+
+//Constants
+trezor.HARDEN = 0x80000000;
 
