@@ -17,7 +17,19 @@
     "trezor",
     "bitcoin"
   ],
-  "author": "William Wolf <throughnothing@gmail.com>",
+  "author": "Mike Tsao <mike@sowbug.com>",
+  "contributors": [
+    {
+      "name" : "Liz Fong-Jones",
+      "email" : "elizabeth@ugcs.caltech.edu",
+      "url" : "https://plus.google.com/+lizthegrey"
+    },
+    {
+      "name" : "William Wolf",
+      "email" : "throughnothing@gmail.com",
+      "url" : "http://blog.throughnothing.com"
+    }
+  ],
   "license": "Public domain",
   "bugs": {
     "url": "https://github.com/throughnothing/chrome-trezor/issues"
